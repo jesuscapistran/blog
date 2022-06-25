@@ -1,0 +1,4 @@
+[submodule "code_notes/public"]
+	path = code_notes/public
+	url = git@github.com:jesuscapistran/jesuscapistran.github.io.git
+	branch = main
