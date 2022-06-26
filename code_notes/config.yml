@@ -1,4 +1,105 @@
 baseURL: https://jesuscapistran.github.io/
 languageCode: en-us
-title: Jesus Capistran - CodeNotes
+title: CodeNotes
+paginate: 5
 theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  author: Jesus Capistran
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Jesus Capistran"
+    Content: Notes about coding in python for material science 
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/capis"
+    - name: youtube
+      url: "https://www.youtube.com/jesuscapistran"
+    - name: github
+      url: "https://github.com/jesuscapistran"
+    - name: buymeacoffee
+      url: "https://buymeacoffee.com/capis"
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true 
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+
+
+# Search module for the site
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
