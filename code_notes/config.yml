@@ -4,6 +4,7 @@ title: CodeNotes
 paginate: 5
 theme: PaperMod
 
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
@@ -16,12 +17,12 @@ minify:
 params:
   author: Jesus Capistran
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark #auto dark, light
   disableThemeToggle: false
 
   # home-info mode
   homeInfoParams:
-    Title: "Jesus Capistran"
+    Title: "Jesus Capistran, Ph.D."
     Content: Notes about coding in python for material science 
 
   socialIcons:
@@ -48,7 +49,7 @@ params:
   hidemeta: false
   hideSummary: false
   showtoc: true
-  tocopen: true 
+  tocopen: false 
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
